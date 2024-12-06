@@ -1,4 +1,4 @@
-import "./NavBar.css";
+import "./Navbar.css";
 import logo from "../../../public/favicon.svg";
 import { Link } from "react-router-dom";
 const Navbar = () => {

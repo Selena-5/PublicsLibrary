@@ -1,22 +1,22 @@
-// // src/components/BookCard.jsx
+import React from 'react';
 import "./Bookcard.css";
 
-const BookCard = ({
-  title,
-  author,
-  description,
-}: {
+// Define the props interface for BookCard
+interface BookCardProps {
+  image?: string;
   title: string;
   author: string;
-  description: string;
-}) => {
+  description?: string; 
+}
+
+const BookCard: React.FC<BookCardProps> = ({ title, author, description }) => {
   return (
     <div className="book-card">
       {/* <img src={image} alt={`${title} cover`} className="book-image" /> */}
       <div className="book-details">
         <h3 className="book-title">{title}</h3>
         <p className="book-author">by {author}</p>
-        <p className="book-description">{description}</p>
+        {description && <p className="book-description">{description}</p>}
         <button className="trade-button">Request Trade</button>
       </div>
     </div>
@@ -24,6 +24,7 @@ const BookCard = ({
 };
 
 export default BookCard;
+
 
 // src/components/BookCard.jsx
 // import React from 'react';

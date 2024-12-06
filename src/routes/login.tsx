@@ -24,7 +24,7 @@ export default function Login() {
             className="input-field"
             required
           />
-          <i class="material-symbols-rounded"></i>
+          <i className="material-symbols-rounded"></i>
         </div>
 
         <div className="input-wrapper">
@@ -34,7 +34,7 @@ export default function Login() {
             className="input-field"
             required
           />
-          <i class="material-symbols-rounded">lock</i>
+          <i className="material-symbols-rounded">lock</i>
         </div>
         <a href="#" className="forgot-pass-link">
           Forgot Password?

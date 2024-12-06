@@ -1,11 +1,20 @@
-import BookCard from "../components/Bookcard";
+import BookCard from "../components/BookCard";
 
-const books = [
-  { title: "1984", author: "George Orwell", cover: "/path/to/1984-cover.jpg" },
+// Define the Book interface
+interface Book {
+  title: string;
+  author: string;
+  cover: string;
+  description?: string; // Make description optional
+}
+
+const books: Book[] = [
+  { title: "1984", author: "George Orwell", cover: "/path/to/1984-cover.jpg", description: "A dystopian social science fiction novel." },
   {
     title: "To Kill a Mockingbird",
     author: "Harper Lee",
     cover: "/path/to/mockingbird-cover.jpg",
+    description: "A novel about the serious issues of rape and racial inequality."
   },
   // Add more books as needed
 ];
@@ -18,7 +27,9 @@ function BrowseBooks() {
         {books.map((book, index) => (
           <BookCard
             key={index}
-            book={{ title: book.title, author: book.author }}
+            title={book.title}
+            author={book.author}
+            description={book.description} // Pass description if available
           />
         ))}
       </div>

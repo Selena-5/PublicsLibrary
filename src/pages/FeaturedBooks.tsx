@@ -1,5 +1,5 @@
 // src/components/FeaturedBooks.jsx
-import BookCard from "../components/Bookcard";
+import BookCard from "../components/BookCard";
 
 const FeaturedBooks = () => (
   <section className="featured-books">

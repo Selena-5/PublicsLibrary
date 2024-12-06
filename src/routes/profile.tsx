@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import UserProfile from '../components/UserProfile';
 
 // Dummy data to simulate user data, will be overidden when we put actual data in

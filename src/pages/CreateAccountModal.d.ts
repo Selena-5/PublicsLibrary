@@ -1,6 +1,8 @@
+import React from 'react';
 import "./CreateAccountModal.css";
-declare const CreateAccountModal: ({ isOpen, onClose }: {
-    isOpen: any;
-    onClose: any;
-}) => import("react/jsx-runtime").JSX.Element | null;
+interface CreateAccountModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+declare const CreateAccountModal: React.FC<CreateAccountModalProps>;
 export default CreateAccountModal;

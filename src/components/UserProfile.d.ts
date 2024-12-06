@@ -9,3 +9,4 @@ interface UserProfileProps {
 }
 declare function UserProfile(props: UserProfileProps): import("react/jsx-runtime").JSX.Element;
 export default UserProfile;
+//# sourceMappingURL=UserProfile.d.ts.map

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import "./Bookcard.css";
 interface BookCardProps {
     image?: string;
@@ -8,3 +8,4 @@ interface BookCardProps {
 }
 declare const BookCard: React.FC<BookCardProps>;
 export default BookCard;
+//# sourceMappingURL=BookCard.d.ts.map

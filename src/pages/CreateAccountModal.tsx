@@ -1,6 +1,6 @@
 // src/components/CreateAccountModal.tsx
-import React from 'react';
-import "./CreateAccountModal.css"; // Add styles for modal
+import * as React from 'react';
+import "./CreateAccountModal.css";
 
 interface CreateAccountModalProps {
   isOpen: boolean;
@@ -17,7 +17,6 @@ const CreateAccountModal: React.FC<CreateAccountModalProps> = ({ isOpen, onClose
           ×
         </button>
         <h2>Create Account</h2>
-        {/* Add your form fields here */}
         <form>
           <input type="text" placeholder="Username" required />
           <input type="email" placeholder="Email" required />

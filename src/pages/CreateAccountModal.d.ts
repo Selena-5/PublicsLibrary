@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import "./CreateAccountModal.css";
 interface CreateAccountModalProps {
     isOpen: boolean;
@@ -6,3 +6,4 @@ interface CreateAccountModalProps {
 }
 declare const CreateAccountModal: React.FC<CreateAccountModalProps>;
 export default CreateAccountModal;
+//# sourceMappingURL=CreateAccountModal.d.ts.map

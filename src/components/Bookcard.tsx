@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import "./Bookcard.css";
 
 // Define the props interface for BookCard
@@ -16,7 +17,7 @@ const BookCard: React.FC<BookCardProps> = ({ title, author, description }) => {
       <div className="book-details">
         <h3 className="book-title">{title}</h3>
         <p className="book-author">by {author}</p>
-        {description && <p className="book-description">{description}</p>}
+        <p className="book-description">{description}</p>
         <button className="trade-button">Request Trade</button>
       </div>
     </div>

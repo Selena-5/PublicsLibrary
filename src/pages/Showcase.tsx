@@ -2,7 +2,7 @@ const Showcase = () => (
   <section
     className="showcase"
     style={{
-      //backgroundImage: `url(/book2.jpg)`, // Public folder reference
+      backgroundImage: `url(/public/book2.jpg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}

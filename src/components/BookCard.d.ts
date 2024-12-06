@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "./Bookcard.css";
+import "./BookCard.css";
 interface BookCardProps {
     image?: string;
     title: string;

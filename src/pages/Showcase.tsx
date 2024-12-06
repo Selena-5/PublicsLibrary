@@ -1,12 +1,8 @@
-// src/components/Showcase.jsx
-import "./Showcase.css";
-import backgroundImage from "../../public/book2.jpg"; // Adjust the path as needed
-
 const Showcase = () => (
   <section
     className="showcase"
     style={{
-      backgroundImage: `url(${backgroundImage})`,
+      //backgroundImage: `url(/book2.jpg)`, // Public folder reference
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}

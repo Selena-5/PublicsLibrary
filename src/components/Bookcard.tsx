@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import "./Bookcard.css";
+import "./BookCard.css";
 
 // Define the props interface for BookCard
 interface BookCardProps {
